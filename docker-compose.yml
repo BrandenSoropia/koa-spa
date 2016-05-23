@@ -1,13 +1,13 @@
 version: '2'
 services:
   server:
-    build: ./server
+    image: node:6.2.0
     working_dir: /usr/src/app
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=dev
+      - NODE_ENV=development
       - NODE_PORT=3000
     volumes:
       - ./server:/usr/src/app
-    command: nodemon app.js
+    command: ./node_modules/.bin/nodemon app.js

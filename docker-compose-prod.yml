@@ -3,11 +3,11 @@ services:
   server:
     build:
       context: ./server
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile-prod
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=prod
+      - NODE_ENV=production
       - NODE_PORT=3000
     user: app
     command: node app.js

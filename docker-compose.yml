@@ -1,9 +1,7 @@
 version: '2'
 services:
   server:
-    build:
-      context: ./server
-      dockerfile: Dockerfile.dev
+    build: ./server
     working_dir: /usr/src/app
     ports:
       - "3000:3000"

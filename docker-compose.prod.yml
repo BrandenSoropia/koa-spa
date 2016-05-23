@@ -1,0 +1,11 @@
+version: '2'
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_PORT=3000
+    command: node app.js

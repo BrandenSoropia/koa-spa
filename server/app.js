@@ -8,7 +8,7 @@ const app = koa()
 app.use(morgan.middleware('dev'))
 
 app.use(function *(next) {
-  console.log('yung')
+  console.log('yung wagon')
 
   yield next
 })

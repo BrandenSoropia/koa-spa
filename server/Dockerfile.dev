@@ -1,0 +1,4 @@
+FROM node:6.2.0
+MAINTAINER Julian Mazzitelli <mazzitelli.julian@gmail.com>
+
+WORKDIR /usr/src/app

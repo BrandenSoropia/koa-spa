@@ -5,9 +5,9 @@ services:
       context: ./server
       dockerfile: Dockerfile-prod
     ports:
-      - "3000:3000"
+      - "$NODE_PORT_OUT:$NODE_PORT_IN"
     environment:
       - NODE_ENV=production
-      - NODE_PORT=3000
+      - NODE_PORT=$NODE_PORT_IN
     user: app
     command: node app.js

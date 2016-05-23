@@ -5,6 +5,10 @@ Work in Progress - Coming Soon :) (will be tagged once functional)
 
 Some workflows are inspired by mezod's [koa redux boilerplate](https://github.com/mezod/boilerplate-koa-redux-react) however koa-spa is a full-stack boilerplate that includes an API layer, an ORM layer, connections to redux, continuous integration and more...
 
+## Environment Preparation
+
+Copy `env.template` into `env` and populate as necessary. Then `source env`.
+
 ## Docker Workflow
 
 To run development workflow:

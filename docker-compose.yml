@@ -4,10 +4,10 @@ services:
     image: node:6.2.0
     working_dir: /usr/src/app
     ports:
-      - "3000:3000"
+      - "$NODE_PORT_OUT:$NODE_PORT_IN"
     environment:
       - NODE_ENV=development
-      - NODE_PORT=3000
+      - NODE_PORT=$NODE_PORT_IN
     volumes:
       - ./server:/usr/src/app
     command: ./node_modules/.bin/nodemon app.js

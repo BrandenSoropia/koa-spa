@@ -24,4 +24,4 @@ app.use(function *() {
   this.body = 'Hello world\n'
 })
 
-app.listen(3000)
+app.listen(process.env.NODE_PORT)

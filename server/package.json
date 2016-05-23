@@ -4,7 +4,8 @@
   "description": "A Sequelize backed Koa server with a React Redux single page application boilerplate. With Docker.",
   "main": "app.js",
   "dependencies": {
-    "koa": "^1.2.0"
+    "koa": "^1.2.0",
+    "koa-morgan": "^0.4.0"
   },
   "devDependencies": {},
   "scripts": {},

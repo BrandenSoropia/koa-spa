@@ -7,6 +7,12 @@ const app = koa()
 
 app.use(morgan.middleware('dev'))
 
+app.use(function *(next) {
+  console.log('yung')
+
+  yield next
+})
+
 app.use(function *() {
   this.body = 'Hello world\n'
 })

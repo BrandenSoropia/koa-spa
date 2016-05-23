@@ -10,4 +10,4 @@ services:
       - NODE_PORT=3000
     volumes:
       - ./server:/usr/src/app
-    command: node app.js
+    command: nodemon app.js
